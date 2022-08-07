@@ -1,0 +1,11 @@
+const itemEl = document.querySelectorAll('.item');
+console.log(`Number of categories: ${itemEl.length}`);
+const headerName = document.querySelectorAll('h2');
+console.log(headerName);
+console.log(`Category: ${headerName[0].innerText}`);
+const ulNumber = document.querySelectorAll('ul');
+console.log(`Elements: ${ulNumber[1].childElementCount}`);
+console.log(`Category: ${headerName[1].innerText}`);
+console.log(`Elements: ${ulNumber[2].childElementCount}`);
+console.log(`Category: ${headerName[2].innerText}`);
+console.log(`Elements: ${ulNumber[3].childElementCount}`);
