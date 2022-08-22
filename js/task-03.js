@@ -13,10 +13,11 @@ const images = [
   },
 ];
 const galleryImg = document.querySelector(`.gallery`)
+
 const imagesEl = images.map(option => 
-  `<li><img class="picture" src=${option.url} alt=${option.alt} width=320</li>` 
+  `<li><img class="picture" src=${option.url} alt = "${option.alt}" width=320</li>` 
   
 ).join("");
 
-console.log(imagesEl);
+// console.log(option.alt);
 galleryImg.insertAdjacentHTML("afterbegin", imagesEl);

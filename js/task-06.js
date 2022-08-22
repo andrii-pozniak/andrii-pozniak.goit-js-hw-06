@@ -15,6 +15,7 @@ function onInputBlur(event) {
         
         return;
     }
+    inputClass.classList.remove(`valid`);
     inputClass.classList.add(`invalid`);
     console.log(event.currentTarget.value);
     console.log(numberWord);
